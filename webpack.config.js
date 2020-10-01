@@ -21,7 +21,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js'],
+    extensions: ['.ts', '.tsx', '.js', 'css', 'scss'],
   },
   output: {
     path: path.resolve(__dirname, 'dist/'),
