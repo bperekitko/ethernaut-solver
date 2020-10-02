@@ -1,9 +1,7 @@
-'use strict';
+import path from 'path';
+import webpack from 'webpack';
 
-const path = require('path');
-const webpack = require('webpack');
-
-module.exports = {
+const config: webpack.Configuration = {
   devtool: 'inline-source-map',
   mode: 'development',
   entry: './src/index.tsx',
@@ -11,12 +9,12 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: 'ts-loader',
+        use: 'ts-loader',
         exclude: /node_modules/,
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        test: /\.s[ac]ss$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
@@ -36,3 +34,5 @@ module.exports = {
   },
   plugins: [new webpack.HotModuleReplacementPlugin()],
 };
+
+export default config;
