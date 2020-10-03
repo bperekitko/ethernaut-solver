@@ -1,15 +1,14 @@
 import React, { FunctionComponent } from 'react';
-import Levels from './levels/Levels';
 import styles from './app.module.scss';
+import Content from './content/Content';
+import Menu from './menu/Menu';
+import './styles.scss';
 
 const App: FunctionComponent<unknown> = () => {
   return (
     <div className={styles.app}>
-      <div>Here will be navigation bar</div>
-      <div>
-        <Levels />
-        <div>Here will be level solution</div>
-      </div>
+      <Menu></Menu>
+      <Content></Content>
     </div>
   );
 };

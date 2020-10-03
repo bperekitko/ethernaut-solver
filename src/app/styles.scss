@@ -1,0 +1,21 @@
+@font-face {
+  //   src: url('../theme/fonts/ApercuMedium/ApercuMedium.eot');
+  font-family: 'Apercu Medium Regular';
+  src: url('../theme/fonts/ApercuMedium/ApercuMedium.woff') format('woff'),
+    url('../theme/fonts/ApercuMedium/ApercuMedium.eot?#iefix') format('embedded-opentype'),
+    url('../theme/fonts/ApercuMedium/ApercuMedium.woff2') format('woff2'),
+    url('../theme/fonts/ApercuMedium/ApercuMedium.ttf') format('truetype');
+}
+html {
+  height: 100%;
+  color: #fafafa;
+  font-family: 'Apercu Medium Regular';
+}
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+}
