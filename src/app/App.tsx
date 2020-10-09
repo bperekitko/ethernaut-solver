@@ -3,12 +3,15 @@ import styles from './app.module.scss';
 import Content from './content/Content';
 import Menu from './menu/Menu';
 import './styles.scss';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const App: FunctionComponent<unknown> = () => {
   return (
     <div className={styles.app}>
-      <Menu></Menu>
-      <Content></Content>
+      <Router>
+        <Menu></Menu>
+        <Content></Content>
+      </Router>
     </div>
   );
 };

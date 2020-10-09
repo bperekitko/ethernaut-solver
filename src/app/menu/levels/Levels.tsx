@@ -6,8 +6,8 @@ import Level from './Level';
 const data: string[] = ['Intro', 'Fallback', 'Fallout', 'CoinFlip'];
 
 const Levels: FunctionComponent<unknown> = () => {
-  const newLocal = data.map((d, index) => <Level key={index} levelName={`${index}. ${d}`} />);
-  return <div className={styles.levels}>{newLocal}</div>;
+  const levels = data.map((name, index) => <Level key={index} name={`${index}. ${name}`} href={name.toLowerCase()} />);
+  return <div className={styles.levels}>{levels}</div>;
 };
 
 export default Levels;
