@@ -1,13 +1,13 @@
 import React, { FunctionComponent } from 'react';
 import Icon from '../../../../assets/icons/home-24px.svg';
-import styles from './home.module.scss';
+import styles from './home-button.module.scss';
 
-const Home: FunctionComponent<unknown> = () => {
+const HomeButton: FunctionComponent<unknown> = () => {
   return (
-    <button className={styles.home}>
+    <button className={styles.home_button}>
       <Icon />
     </button>
   );
 };
 
-export default Home;
+export default HomeButton;

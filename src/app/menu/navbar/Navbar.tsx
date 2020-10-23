@@ -1,13 +1,13 @@
 import React, { FunctionComponent } from 'react';
 import styles from './navbar.module.scss';
-import Wallet from './wallet/Wallet';
-import Home from './home/Home';
+import WalletButton from './wallet/WalletButton';
+import HomeButton from './home/Home';
 
 const Navbar: FunctionComponent<unknown> = () => {
   return (
     <div className={styles.navbar}>
-      <Home></Home>
-      <Wallet></Wallet>
+      <HomeButton></HomeButton>
+      <WalletButton></WalletButton>
     </div>
   );
 };
