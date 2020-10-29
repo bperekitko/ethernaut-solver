@@ -5,7 +5,7 @@ $wallet-button-background: #14131e;
   display: flex;
   flex-direction: column;
   width: 300px;
-  height: 100%;
+  min-height: 100vh;
   border-right: solid 1px #262439;
 }
 
