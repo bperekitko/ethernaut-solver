@@ -7,7 +7,7 @@
 }
 html {
   min-height: 100vh;
-  color: #fafafa;
+  color: #dcdcdc;
   font-family: 'Apercu Medium Regular';
 }
 body {
@@ -16,5 +16,7 @@ body {
 }
 
 #root {
+  display: inline-block;
+  min-width: 100%;
   min-height: 100vh;
 }
